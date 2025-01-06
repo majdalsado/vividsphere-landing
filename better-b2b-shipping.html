@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>B2B Shipping Rules Pro - VividSphere Commerce</title>
+    <meta content="B2B Shipping Rules Pro - VividSphere Commerce" property="og:title"/>
+    <meta content="B2B Shipping Rules Pro - VividSphere Commerce" property="twitter:title"/>
+    <meta property="og:type" content="website"/>
+    <meta content="summary_large_image" name="twitter:card"/>
+    <link href="/assets/images/brand/favicon-32x32.png" rel="shortcut icon" type="image/x-icon"/>
+    <link href="/assets/images/brand/android-chrome-512x512.png" rel="apple-touch-icon"/>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/shared.css">
@@ -20,6 +26,7 @@
         }
     </script>
     <script src="components/header.js"></script>
+    <script src="components/footer.js"></script>
 </head>
 <body class="bg-white">
     <header-component></header-component>
@@ -34,49 +41,66 @@
                 <p class="text-xl text-gray-600 mb-8">
                     Tailor shipping options by segment and company. Customized shipping for B2B and DTC checkout.
                 </p>
-                <a href="https://apps.shopify.com/better-b2b-shipping?utm_source=vividsphere&utm_medium=website&utm_campaign=b2b-shipping-rules-pro" class="btn-primary w-fit">
-                    <img src="assets/images/shopify/badge-shopify-app-store-dark.svg" alt="Install on Shopify" class="h-20">
-                </a>
-                <a href="https://calendly.com/braden-vividsphere/vividsphere-b2b-shipping-options" class="inline-block ml-4 px-6 py-3 bg-white text-blue-600 font-semibold rounded-lg border-2 border-blue-600 hover:bg-blue-50 transition-colors">
-                    Request a Demo
-                </a>
+                <div class="flex items-center">
+                    <a href="https://apps.shopify.com/better-b2b-shipping?utm_source=vividsphere&utm_medium=website&utm_campaign=b2b-shipping-rules-pro" class="btn-primary w-fit">
+                        <img src="assets/images/shopify/badge-shopify-app-store-dark.svg" alt="Install on Shopify" class="h-14">
+                    </a>
+                    <a href="https://calendly.com/braden-vividsphere/vividsphere-b2b-shipping-options" class="inline-flex items-center ml-4 px-8 h-16 bg-gray-50 text-gray-900 font-medium rounded-full hover:bg-gray-100 transition-colors">
+                        Get demo
+                    </a>
+                </div>
             </div>
             <div class="lg:w-1/2 mt-12 lg:mt-0">
                 <img src="assets/images/better-b2b-shipping/hero.webp" alt="Better B2B Shipping" class="w-full rounded-lg">
             </div>
         </div>
 
-        <div class="mt-24 max-w-4xl mx-auto">
-            <p class="text-xl text-gray-600 leading-relaxed mb-12">
-                Managing B2B and direct-to-consumer (DTC) shipping can be difficult. B2B Shipping Rules Pro allows you to customize shipping options by customer segment (B2B/DTC) or company, offering a personalized checkout experience on Shopify's native B2B. Enhance customer satisfaction by providing tailored shipping options to your customers, all through an intuitive and easy-to-use interface.
+        <div class="mt-24">
+            <h1 class="text-[56px] leading-tight font-sora mb-6">Native Shopify B2B, By Your Rules</h1>
+            <p class="text-xl text-gray-600 mb-12 max-w-4xl">
+                Managing B2B and direct-to-consumer (DTC) shipping can be complex. Different shipping rates, delivery needs, and customer expectations require a flexible solution.
+            </p>
+            <p class="text-xl text-gray-600 mb-16">
+                We provide a simple solution, built on Native Shopify B2B.
             </p>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white rounded-2xl p-8 shadow-md">
-                    <div class="text-2xl mb-4">🚢</div>
-                    <h3 class="text-xl font-semibold mb-3 font-sora">Segment-Specific Shipping</h3>
-                    <p class="text-gray-600">Define shipping options for B2B and DTC customers.</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto px-4">
+                <!-- Card 1: Segment-Based Rules -->
+                <div class="flex flex-col items-start p-6 bg-white rounded-lg shadow-md">
+                    <div class="p-3 bg-blue-50 rounded-lg mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2 text-gray-900">Segment-Based Shipping Rules</h3>
+                    <p class="text-gray-600">Automatically apply different shipping options for B2B and DTC customers. Streamline your checkout process and ensure each customer segment sees only relevant shipping methods.</p>
                 </div>
-                <div class="bg-white rounded-2xl p-8 shadow-md">
-                    <div class="text-2xl mb-4">🏢</div>
-                    <h3 class="text-xl font-semibold mb-3 font-sora">Company-Level Customization</h3>
-                    <p class="text-gray-600">Define shipping options for individual companies.</p>
+            
+                <!-- Card 2: Company-Specific Options -->
+                <div class="flex flex-col items-start p-6 bg-white rounded-lg shadow-md">
+                    <div class="p-3 bg-blue-50 rounded-lg mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2 text-gray-900">Company-Specific Options</h3>
+                    <p class="text-gray-600">Create custom shipping rules for individual business customers. Offer preferential rates, special delivery options, or unique shipping arrangements based on specific company agreements.</p>
                 </div>
-                <div class="bg-white rounded-2xl p-8 shadow-md">
-                    <div class="text-2xl mb-4">✨</div>
-                    <h3 class="text-xl font-semibold mb-3 font-sora">Intuitive Management</h3>
-                    <p class="text-gray-600">Easily understand available shipping methods on checkout.</p>
+            
+                <!-- Card 3: Easy Management -->
+                <div class="flex flex-col items-start p-6 bg-white rounded-lg shadow-md">
+                    <div class="p-3 bg-blue-50 rounded-lg mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2 text-gray-900">Easy Management Interface</h3>
+                    <p class="text-gray-600">Configure and manage all your shipping rules from one intuitive dashboard. Preview how different customer segments will see shipping options during checkout to ensure a smooth experience.</p>
                 </div>
             </div>
         </div>
     </main>
 
-    <footer class="bg-gray-50 mt-24">
-        <div class="container mx-auto px-6 py-12">
-            <div class="text-center">
-                <p class="text-gray-600">© 2024 VividSphere Commerce. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+    <footer-component></footer-component>
 </body>
 </html>

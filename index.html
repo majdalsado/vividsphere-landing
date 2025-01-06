@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VividSphere - Custom Development Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sora: ['Sora', 'sans-serif'],
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                    backgroundImage: {
+                        'gradient-text': 'linear-gradient(90deg, #4F46E5, #06B6D4)',
+                        'hero-gradient': 'linear-gradient(to bottom, rgba(59, 130, 246, 0.1), rgb(249, 250, 251))',
+                    },
+                }
+            }
+        }
+    </script>
+    <script src="components/header.js"></script>
+</head>
+<body class="bg-white">
+    <header-component></header-component>
+
+    <main>
+        <div class="container mx-auto px-12">
+            <div class="mt-16 mb-24 rounded-3xl bg-hero-gradient">
+                <div class="px-6 py-16">
+                    <div class="max-w-4xl mx-auto text-center">
+                        <h1 class="text-5xl font-semibold mb-8 font-sora">
+                            <span class="bg-gradient-text bg-clip-text text-transparent">Crafting Custom</span><br>
+                            Development Solutions
+                        </h1>
+                        <p class="text-xl text-gray-600 mb-12">
+                            We transform your ideas into powerful, scalable solutions. From enterprise applications to innovative Shopify apps, we build technology that drives your business forward.
+                        </p>
+                        <div class="flex justify-center space-x-6">
+                            <a href="#contact" class="bg-indigo-600 text-white px-8 py-3 rounded-lg hover:bg-indigo-700 transition">
+                                Start Your Project
+                            </a>
+                            <a href="better-b2b-shipping.html" class="border border-indigo-600 text-indigo-600 px-8 py-3 rounded-lg hover:bg-indigo-50 transition">
+                                View Our Work
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-6 grid grid-cols-1 md:grid-cols-3 gap-12 pb-16">
+                    <div class="text-center">
+                        <div class="text-4xl mb-4">💻</div>
+                        <h3 class="text-xl font-semibold mb-2 font-sora">Custom Development</h3>
+                        <p class="text-gray-600">Tailored solutions built with modern technology stacks</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl mb-4">🛍️</div>
+                        <h3 class="text-xl font-semibold mb-2 font-sora">E-commerce Solutions</h3>
+                        <p class="text-gray-600">Specialized in Shopify app development and integrations</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl mb-4">🚀</div>
+                        <h3 class="text-xl font-semibold mb-2 font-sora">Technical Consulting</h3>
+                        <p class="text-gray-600">Strategic guidance for your technical challenges</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-black text-white py-16 mt-20">
+        <div class="container mx-auto px-6">
+            <div class="max-w-2xl">
+                <img src="assets/images/brand/sphere.svg" alt="VividSphere Commerce" class="h-8 mb-8">
+                <h2 class="text-3xl font-sora mb-6">Join our newsletter to stay up to date on features and releases.</h2>
+                
+                <div class="flex gap-4 mb-4">
+                    <input type="email" placeholder="Enter your email" class="flex-1 px-4 py-3 rounded-lg bg-white text-black">
+                    <button class="px-8 py-3 bg-blue-600 rounded-lg hover:bg-blue-700 transition font-medium">
+                        Join now
+                    </button>
+                </div>
+
+                <p class="text-gray-400 text-sm mb-16">By subscribing you agree to with our Privacy Policy and provide consent to receive updates from our company.</p>
+
+                <div class="border-t border-gray-800 pt-8">
+                    <p class="text-gray-300">Crafted with ❤️ in Canada.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

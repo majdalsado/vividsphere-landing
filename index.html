@@ -12,22 +12,9 @@
     <link href="/assets/images/brand/android-chrome-512x512.png" rel="apple-touch-icon"/>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/shared.css">
+    <script src="tailwind.config.js"></script>
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sora: ['Sora', 'sans-serif'],
-                        sans: ['Inter', 'system-ui', 'sans-serif'],
-                    },
-                    backgroundImage: {
-                        'gradient-text': 'linear-gradient(90deg, #4F46E5, #06B6D4)',
-                        'hero-gradient': 'linear-gradient(to bottom, rgba(59, 130, 246, 0.1), rgb(249, 250, 251))',
-                    },
-                }
-            }
-        }
+        tailwind.config = config
     </script>
     <script src="components/header.js"></script>
     <script src="components/footer.js"></script>
@@ -36,18 +23,18 @@
     <header-component></header-component>
 
     <main>
-        <div class="container mx-auto px-12">
-            <div class="mt-16 mb-24 rounded-3xl bg-hero-gradient">
-                <div class="px-6 py-16">
+        <div class="container mx-auto px-4 sm:px-12">
+            <div class="mt-8 sm:mt-16 mb-16 sm:mb-24 rounded-3xl bg-hero-gradient">
+                <div class="px-4 sm:px-6 py-12 sm:py-16">
                     <div class="max-w-4xl mx-auto text-center">
-                        <h1 class="text-5xl font-semibold mb-8 font-sora">
+                        <h1 class="text-3xl sm:text-5xl font-semibold mb-6 sm:mb-8 font-sora">
                             <span class="bg-gradient-text bg-clip-text text-transparent">Crafting Custom</span><br>
                             Development Solutions
                         </h1>
-                        <p class="text-xl text-gray-600 mb-12">
+                        <p class="text-lg sm:text-xl text-gray-600 mb-8 sm:mb-12">
                             We transform your ideas into powerful, scalable solutions. From enterprise applications to innovative Shopify apps, we build technology that drives your business forward.
                         </p>
-                        <div class="flex justify-center space-x-6">
+                        <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
                             <a href="#contact" class="bg-indigo-600 text-white px-8 py-3 rounded-lg hover:bg-indigo-700 transition">
                                 Start Your Project
                             </a>
@@ -57,7 +44,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="px-6 grid grid-cols-1 md:grid-cols-3 gap-12 pb-16">
+                <div class="px-4 sm:px-6 grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-12 pb-12 sm:pb-16">
                     <div class="text-center">
                         <div class="text-4xl mb-4">💻</div>
                         <h3 class="text-xl font-semibold mb-2 font-sora">Custom Development</h3>
